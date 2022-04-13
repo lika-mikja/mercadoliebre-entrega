@@ -1,0 +1,314 @@
+:root {
+    --amarillo: #eac926;
+    --azul: #03264c;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--gris-claro);
+    margin: 0;
+}
+
+h5,
+p {
+    margin: 0;
+}
+
+.prince {
+    font-size: 16px;
+}
+
+.discounts {
+    font-size: 14px;
+}
+
+.description {
+    font-size: 14px;
+    color: var(--gris-oscuro);
+    display: none;
+}
+
+.logo {
+    padding: 5%;
+    width: 50%;
+}
+
+.titulares {
+    font-size: 24px;
+    color: var(--gris-oscuro);
+}
+
+.cuerpo-de-texto {
+    font-size: 12px;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 12px;
+    padding: 1rem;
+}
+
+header {
+    background-color: var(--amarillo);
+}
+
+
+article img {
+    width: 100%;
+}
+
+section img {
+    width: 100%;
+}
+
+/* El Icono buscar no queda dentro del formulario ¿? */
+.form {
+
+    font-size: 12px;
+    width: 50%;
+    margin: auto;
+
+}
+
+.cuotas {
+    text-align: center;
+    font-size: 12px;
+    margin: 1rem;
+}
+
+/* Selector descendente el cual saca los puntos del item de la lista */
+ul li {
+    list-style-type: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px;
+    font-size: 12px;
+}
+
+/* Menu hamburguesa*/
+.burger-menu {
+    color: var(--celeste);
+    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    margin-bottom: 10px;
+    display: block;
+
+}
+
+.site {
+    display: none;
+}
+
+.nav-bar {
+    display: none;
+}
+
+.titulo-footer {
+    text-align: center;
+}
+
+footer {
+    background-color: white;
+
+}
+
+/*  Iconos footer.*/
+footer .footer {
+    text-align: center;
+    font-size: 2em;
+    color: var(--celeste);
+    margin-bottom: 10px;
+}
+
+main {
+    width: 90%;
+    margin: auto;
+}
+
+/* Corte con linea solida y de 1px entre la imagen y el envio, precio,descuento y descripción */
+
+.separate-line {
+    position: relative;
+    border-top: 1px solid var(--gris-claro);
+    padding: 15px;
+    background-color: white;
+}
+
+
+main section article {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Camionisto*/
+main section div i {
+    position: absolute;
+    top: -15%;
+    right: 5%;
+    border: 1px solid var(--verde);
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 5px;
+    color: var(--verde);
+}
+ /* Rotacion de camionsito */
+
+main section div i:hover {
+    transition-duration: 1s;
+    transform: rotate(-90deg);
+}
+
+p.discounts {
+    color: var(--verde);
+}
+
+
+/*  Agregar display flex a precio y descripcion*/
+.flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.discounts {
+    width: 40%;
+}
+
+.prince {
+    width: 60%;
+}
+
+.footer-flex {
+    padding: 2rem;
+}
+
+/* Listas flex */
+
+
+.list-flex1 {
+    display: flex;
+    justify-content: left;
+}
+
+.list-flex2 {
+    display: flex;
+    justify-content: right;
+
+}
+
+.fa-search {
+    margin: 5px;
+}
+
+.header-flex {
+    display: flex;
+}
+
+
+/* Formulario register*/
+
+main {
+   padding: 1rem;
+   text-align: center;
+   color: var(--gris-oscuro);
+  
+}
+input {
+    color: var(--gris-oscuro);
+   border-color: var(--gris-claro);
+}
+p{
+    color: black;
+    font-size: 16px;;
+}
+div{
+    padding: 10px;
+}
+
+/* Formulario Login*/
+
+.botton-enviar:HOVER {
+    background-color: #0022AA ;
+    color: white;
+  
+}
+
+/* Indicar error al tipear un solo caracter ¿?*/
+
+/* TABLETS */
+
+@media (min-width: 361px) {
+    .description {
+        display: block;
+    }
+
+    /* Sombreado*/
+    .box-element:hover {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .site {
+        display: block;
+    }
+
+    .nav-bar {
+        display: block;
+    }
+
+    main section div.products {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    article {
+        width: 45%;
+    }
+    /* Que las listas nav sean flex . Cuando las achico los iconos se van para abajo ¿?*/
+    .section-ul,
+    .nav-bar {
+        display: flex;
+        margin: auto;
+    }
+    /* No funciona que el header sea flex junto con las cuotas¿?*/
+    .header-flex , .cuotas {
+        display: flex;
+    }
+}
+
+/* DESKTOP */
+
+@media (min-width: 769px) {
+    article {
+        width: 23%;
+    }
+
+    .footer-flex {
+        display: flex;
+    }
+    /*  Los iconos no quedan por encima de los textos ¿?*/
+    .footer {
+        display: flex;
+    }
+
+    header .header-flex,
+    .cuotas {
+        display: flex;
+    }
+
+    .cuotas {
+        order: 1;
+    }
+}
