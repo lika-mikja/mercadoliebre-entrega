@@ -240,6 +240,9 @@ div{
   
 }
 
+main section article:hover .description{
+    display:block;
+}
 /* Indicar error al tipear un solo caracter ¿?*/
 
 /* TABLETS */
