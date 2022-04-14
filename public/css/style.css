@@ -186,7 +186,7 @@ p.discounts {
 }
 
 .footer-flex {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 /* Listas flex */
@@ -200,7 +200,7 @@ p.discounts {
 .list-flex2 {
     display: flex;
     justify-content: right;
-
+    
 }
 
 .fa-search {
@@ -240,9 +240,7 @@ div{
   
 }
 
-main section article:hover .description{
-    display:block;
-}
+
 /* Indicar error al tipear un solo caracter ¿?*/
 
 /* TABLETS */
@@ -298,20 +296,20 @@ main section article:hover .description{
         width: 23%;
     }
 
+    /* Footer flex */
     .footer-flex {
         display: flex;
     }
-    /*  Los iconos no quedan por encima de los textos ¿?*/
-    .footer {
-        display: flex;
-    }
-
-    header .header-flex,
-    .cuotas {
+    
+    .header-flex
+     {
         display: flex;
     }
 
     .cuotas {
         order: 1;
+    }
+    main section article:hover .description{
+        display:block;
     }
 }
