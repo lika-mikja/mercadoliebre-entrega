@@ -18,6 +18,7 @@ p {
     margin: 0;
 }
 
+
 .prince {
     font-size: 16px;
 }
@@ -159,7 +160,8 @@ main section div i {
     padding: 5px;
     color: var(--verde);
 }
- /* Rotacion de camionsito */
+
+/* Rotacion de camionsito */
 
 main section div i:hover {
     transition-duration: 1s;
@@ -200,14 +202,15 @@ p.discounts {
 .list-flex2 {
     display: flex;
     justify-content: right;
-    
+
 }
 
 .fa-search {
     margin: 5px;
 }
 
-.header-flex {
+
+.logo-form{
     display: flex;
 }
 
@@ -215,29 +218,33 @@ p.discounts {
 /* Formulario register*/
 
 main {
-   padding: 1rem;
-   text-align: center;
-   color: var(--gris-oscuro);
-  
+    padding: 1rem;
+    text-align: center;
+    color: var(--gris-oscuro);
+
 }
+
 input {
     color: var(--gris-oscuro);
-   border-color: var(--gris-claro);
+    border-color: var(--gris-claro);
 }
-p{
+
+p {
     color: black;
-    font-size: 16px;;
+    font-size: 16px;
+    ;
 }
-div{
+
+div {
     padding: 10px;
 }
 
 /* Formulario Login*/
 
 .botton-enviar:HOVER {
-    background-color: #0022AA ;
+    background-color: #0022AA;
     color: white;
-  
+
 }
 
 
@@ -259,14 +266,6 @@ div{
         display: none;
     }
 
-    .site {
-        display: block;
-    }
-
-    .nav-bar {
-        display: block;
-    }
-
     main section div.products {
         display: flex;
         flex-direction: row;
@@ -277,16 +276,29 @@ div{
     article {
         width: 45%;
     }
-    /* Que las listas nav sean flex . Cuando las achico los iconos se van para abajo ¿?*/
-    .section-ul,
+
+    /* Que las listas nav sean flex .*/
+
+    .section-ul {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
     .nav-bar {
+        display: block;
         display: flex;
-        margin: auto;
+        justify-content: space-between;
+        text-align: center;
+        width: 30%;
+        padding : 1rem;
+        margin: 10px;
+       
+
     }
-    /* No funciona que el header sea flex junto con las cuotas¿?*/
-    .header-flex , .cuotas {
-        display: flex;
-    }
+
+
+
 }
 
 /* DESKTOP */
@@ -300,16 +312,19 @@ div{
     .footer-flex {
         display: flex;
     }
-    
-    .header-flex
-     {
-        display: flex;
-    }
 
-    .cuotas {
-        order: 1;
+     /*  Header flex */
+
+     .header-flex {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+
     }
-    main section article:hover .description{
-        display:block;
+   
+
+    main section article:hover .description {
+        display: block;
     }
 }
