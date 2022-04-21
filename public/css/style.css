@@ -288,15 +288,16 @@ div {
     .nav-bar {
         display: block;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         text-align: center;
         width: 30%;
         padding : 1rem;
         margin: 10px;
-       
-
     }
-
+    .site {
+        display: block;
+    }
+    
 
 
 }
@@ -328,3 +329,8 @@ div {
         display: block;
     }
 }
+
+/* Falto
+1) Que los iconos de nav-bar vayan unidos. Cuando achicas la pantalla se van al renglon de abajo. No se como hacer :( . 
+2)Que desaparezca la descripció del producto con un click ( para mobile)
+*/
